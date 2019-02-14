@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from "react";
 import {
   ViewStyle,
   TextStyle,
@@ -19,25 +19,24 @@ import {
   SwitchProperties,
   StatusBarStyle,
   ModalProps,
-  TextInputProps,
-} from 'react-native';
-import { RatingProps, AirbnbRatingProps } from 'react-native-ratings';
+  TextInputProps
+} from "react-native";
 
 /**
  * Supports auto complete for most used types as well as any other string type.
  */
 export type IconType =
-  | 'material'
-  | 'material-community'
-  | 'simple-line-icon'
-  | 'zocial'
-  | 'font-awesome'
-  | 'octicon'
-  | 'ionicon'
-  | 'foundation'
-  | 'evilicon'
-  | 'entypo'
-  | 'antdesign'
+  | "material"
+  | "material-community"
+  | "simple-line-icon"
+  | "zocial"
+  | "font-awesome"
+  | "octicon"
+  | "ionicon"
+  | "foundation"
+  | "evilicon"
+  | "entypo"
+  | "antdesign"
   | string;
 
 export interface IconObject {
@@ -196,7 +195,7 @@ export interface AvatarProps {
    * @default "small"
    */
 
-  size?: 'small' | 'medium' | 'large' | 'xlarge' | number;
+  size?: "small" | "medium" | "large" | "xlarge" | number;
 
   /**
    * Image Component of Avatar
@@ -303,7 +302,7 @@ export interface ButtonProps
    *
    * @default solid
    */
-  type?: 'solid' | 'clear' | 'outline';
+  type?: "solid" | "clear" | "outline";
 
   /**
    * If the user is allowed to interact with the button
@@ -371,7 +370,7 @@ export interface BadgeProps {
    *
    * @default primary
    */
-  status?: 'primary' | 'success' | 'warning' | 'error';
+  status?: "primary" | "success" | "warning" | "error";
 
   /**
    * Function called when pressed on the badge
@@ -955,7 +954,7 @@ export interface HeaderProps extends ViewProperties {
    *
    * @default 'center'
    */
-  placement?: 'left' | 'center' | 'right';
+  placement?: "left" | "center" | "right";
 
   /**
    * Styling for main container
@@ -1276,11 +1275,6 @@ export interface PricingCardProps {
  */
 export class PricingCard extends React.Component<PricingCardProps, any> {}
 
-/**
- * Rating, AirbnbRating, RatingProps, AirbnbRatingProps
- */
-export * from 'react-native-ratings';
-
 export type IconNode = boolean | React.ReactElement<{}> | IconProps;
 
 export interface SearchBarWrapper {
@@ -1289,7 +1283,7 @@ export interface SearchBarWrapper {
    *
    * @default is 'default
    */
-  platform?: 'default' | 'ios' | 'android';
+  platform?: "default" | "ios" | "android";
 }
 
 export interface SearchBarBase extends TextInputProperties {
@@ -1517,7 +1511,7 @@ export interface SliderProps {
    *
    * @default horizontal
    */
-  orientation?: 'horizontal' | 'vertical';
+  orientation?: "horizontal" | "vertical";
 
   /**
    * If true the user won't be able to move the slider
@@ -1628,7 +1622,7 @@ export interface SliderProps {
    *
    * @default 'timing'
    */
-  animationType?: 'spring' | 'timing';
+  animationType?: "spring" | "timing";
 
   /**
    * Used to configure the animation parameters. These are the same parameters in the Animated library.
@@ -1646,27 +1640,27 @@ export interface SliderProps {
 export class Slider extends React.Component<SliderProps, any> {}
 
 export type SocialMediaType =
-  | 'facebook'
-  | 'twitter'
-  | 'google-plus-official'
-  | 'pinterest'
-  | 'linkedin'
-  | 'youtube'
-  | 'vimeo'
-  | 'tumblr'
-  | 'instagram'
-  | 'quora'
-  | 'foursquare'
-  | 'wordpress'
-  | 'stumbleupon'
-  | 'github'
-  | 'github-alt'
-  | 'twitch'
-  | 'medium'
-  | 'soundcloud'
-  | 'gitlab'
-  | 'angellist'
-  | 'codepen';
+  | "facebook"
+  | "twitter"
+  | "google-plus-official"
+  | "pinterest"
+  | "linkedin"
+  | "youtube"
+  | "vimeo"
+  | "tumblr"
+  | "instagram"
+  | "quora"
+  | "foursquare"
+  | "wordpress"
+  | "stumbleupon"
+  | "github"
+  | "github-alt"
+  | "twitch"
+  | "medium"
+  | "soundcloud"
+  | "gitlab"
+  | "angellist"
+  | "codepen";
 
 export interface SocialIconProps {
   /**
@@ -1974,8 +1968,6 @@ export interface FullTheme {
   ListItem: Partial<ListItemProps>;
   Overlay: Partial<OverlayProps>;
   PricingCard: Partial<PricingCardProps>;
-  Rating: Partial<RatingProps>;
-  AirbnbRating: Partial<AirbnbRatingProps>;
   SearchBar: Partial<SearchBarProps>;
   Slider: Partial<SliderProps>;
   SocialIcon: Partial<SocialIconProps>;
